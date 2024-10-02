@@ -56,10 +56,18 @@
                             <p>
                                 A Vue.js-based e-commerce platform focused on book sales. 
                                 This project includes a shopping cart system, user authentication, 
-                                and an integrated Redis cache for improving performance. The 
+                                and an integrated Redis cache for cart store. The 
                                 front-end is highly interactive and user-friendly, while the back-end 
                                 is built to handle scalable transactions.
                             </p>
+                        </div>
+                        <div class="techniques">
+                            <h5>Techniques</h5>
+                            <ul>
+                                <li>RESTful API</li>
+                                <li>JWT Authentication</li>
+                                <li>Server-side cache with Redis</li>
+                            </ul>
                         </div>
                         <div class="technologies">
                             <h5>Technologies</h5>
@@ -71,7 +79,15 @@
                                 <img src="@/assets/imgs/mysql.png" alt="MySQL">
                                 <img src="@/assets/imgs/node.png" alt="Node.js">
                                 <img src="@/assets/imgs/postman.png" alt="Postman">
+                                <img src="@/assets/imgs/redis.png" alt="Redis">
                             </div>
+                        </div>
+                        <div class="github">
+                            <a href="https://github.com/sadiegoc/the-best-seller" target="blank">
+                                <img v-if="dark" src="@/assets/imgs/icons/social/github-white.png" alt="GitHub">
+                                <img v-else src="@/assets/imgs/icons/social/github-black.png" alt="GitHub">
+                                View on GitHub
+                            </a>
                         </div>
                     </div>
                 </div>
@@ -115,6 +131,12 @@
                                 thanks to real-time updates and a clean interface.
                             </p>
                         </div>
+                        <div class="techniques">
+                            <h5>Techniques</h5>
+                            <ul>
+                                <li>RESTful API</li>
+                            </ul>
+                        </div>
                         <div class="technologies">
                             <h5>Technologies</h5>
                             <div class="technologies-container">
@@ -126,6 +148,13 @@
                                 <img src="@/assets/imgs/node.png" alt="Node.js">
                                 <img src="@/assets/imgs/postman.png" alt="Postman">
                             </div>
+                        </div>
+                        <div class="github">
+                            <a href="https://github.com/sadiegoc/to-do-list" target="blank">
+                                <img v-if="dark" src="@/assets/imgs/icons/social/github-white.png" alt="GitHub">
+                                <img v-else src="@/assets/imgs/icons/social/github-black.png" alt="GitHub">
+                                View on GitHub
+                            </a>
                         </div>
                     </div>
                 </div>
@@ -171,6 +200,13 @@
                                 management, making it a fully functional forum for developer communities.
                             </p>
                         </div>
+                        <div class="techniques">
+                            <h5>Techniques</h5>
+                            <ul>
+                                <li>RESTful API</li>
+                                <li>JWT Authentication</li>
+                            </ul>
+                        </div>
                         <div class="technologies">
                             <h5>Technologies</h5>
                             <div class="technologies-container">
@@ -182,6 +218,13 @@
                                 <img src="@/assets/imgs/node.png" alt="Node.js">
                                 <img src="@/assets/imgs/postman.png" alt="Postman">
                             </div>
+                        </div>
+                        <div class="github">
+                            <a href="https://github.com/sadiegoc/dev-forum" target="blank">
+                                <img v-if="dark" src="@/assets/imgs/icons/social/github-white.png" alt="GitHub">
+                                <img v-else src="@/assets/imgs/icons/social/github-black.png" alt="GitHub">
+                                View on GitHub
+                            </a>
                         </div>
                     </div>
                 </div>
@@ -307,7 +350,7 @@ section > h2 hr.left { margin-right: 20px; }
 section > h2 hr.right { margin-left: 20px; }
 
 .projects-container {
-    width: 100%;
+    width: 100%; margin: 40px 0;
     display: grid; grid-template-columns: repeat(1, 1fr);
     justify-items: center; justify-content: space-between;
     align-items: stretch; gap: 20px 0;
@@ -370,7 +413,7 @@ section > h2 {
 
 .modal {
     width: 1000px; height: auto;
-    display: none; z-index: 9;
+    display: none; z-index: 999;
 
     border: 1px solid;
     border-radius: var(--border-r);
@@ -401,7 +444,7 @@ section > h2 {
 }
 
 .projects-modals .modal .container {
-    max-height: 80vh; overflow-y: auto;
+    max-height: 70vh; overflow-y: auto;
     padding: 15px;
     display: flex;
     align-items: flex-start;
@@ -490,7 +533,8 @@ section > h2 {
     font-size: 0.9rem;
 }
 
-.modal .technologies h5 {
+.modal .technologies h5,
+.modal .techniques h5 {
     margin: 20px 0 10px 0;
 } 
 
@@ -504,6 +548,37 @@ section > h2 {
     width: 62px; margin: 0 5px;
     border-radius: var(--border-r);
     padding: 10px;
+}
+
+.modal .techniques ul {
+    margin-left: 20px;
+}
+
+.modal .techniques ul li {
+    font-size: 0.9rem;
+}
+
+.modal .github {
+    margin: 20px 0 0 0;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.modal .github a {
+    border: 1px solid;
+    border-radius: 24px;
+    padding: 0 16px;
+    font-size: 0.7rem;
+    height: 32px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.modal .github img {
+    width: 16px; margin-right: 10px;
 }
 
 .backdrop {

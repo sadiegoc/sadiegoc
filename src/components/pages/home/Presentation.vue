@@ -120,6 +120,14 @@ section {
     margin-left: 10px;
 }
 
+.social a {
+    opacity: 0.7;
+}
+
+.social a:hover {
+    opacity: 1;
+}
+
 .social img {
     height: 24px;
 }

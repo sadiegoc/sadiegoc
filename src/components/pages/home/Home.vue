@@ -4,9 +4,7 @@
             <Presentation></Presentation>
             <Skills></Skills>
             <Projects></Projects>
-            <Services></Services>
             <About></About>
-            <Contact></Contact>
         </div>
     </article>
 </template>
@@ -16,8 +14,6 @@ import { mapState } from 'vuex';
 import Presentation from './Presentation.vue';
 import Skills from './Skills.vue';
 import Projects from './Projects.vue';
-import Services from './Services.vue';
-import Contact from './Contact.vue';
 import About from './About.vue';
 
 export default {
@@ -27,9 +23,7 @@ export default {
         Presentation,
         About,
         Skills,
-        Projects,
-        Services,
-        Contact
+        Projects
     }
 }
 </script>

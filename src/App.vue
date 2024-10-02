@@ -22,13 +22,13 @@ export default {
   --header-h: 65px;
   --footer-h: 120px;
 
-  --black-hard: #101010;
-  --black-half: #242424;
+  --black-hard: #000;
+  --black-half: #151515;
   --black-soft: #303030;
   
-  --white-hard: #fcfcfc;
-  --white-half: #eee;
-  --white-soft: #ddd;
+  --white-hard: #f5f5f5;
+  --white-half: #e5e5e5;
+  --white-soft: #d5d5d5;
 
   --color-theme: #EC4E20;
 

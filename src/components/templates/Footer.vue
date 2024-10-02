@@ -97,7 +97,7 @@ footer .left .brand span {
 }
 
 .social img {
-    height: 18px;
+    height: 20px;
 }
 
 .social a:first-child {
@@ -106,6 +106,14 @@ footer .left .brand span {
     padding: 0 16px;
     font-size: 0.7rem;
     height: 24px;
+}
+
+.social a {
+    opacity: 0.7;
+}
+
+.social a:hover {
+    opacity: 1;
 }
 
 @media (max-width: 1440px) {

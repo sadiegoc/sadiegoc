@@ -101,9 +101,20 @@
                 </div>
                 <div class="body">
                     <p>
-                        I'm able to use the git code versioner, 
-                        branching the application whenever necessary 
-                        and merging whenever completed.
+                        I'm able to use the git code versioner.
+                    </p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="head">
+                    <img src="@/assets/imgs/python.png">
+                    <h5>Python</h5>
+                </div>
+                <div class="body">
+                    <p>
+                        Basic knowledge of the language, 
+                        having built some CLI applications with 
+                        sockets and threads.
                     </p>
                 </div>
             </div>
@@ -174,7 +185,7 @@ section > h2 hr.left { margin-right: 20px; }
 section > h2 hr.right { margin-left: 20px; }
 
 .cards-container {
-    width: 100%; margin: 20px 0;
+    width: 100%; margin: 40px 0;
     display: grid; grid-template-columns: repeat(1, 1fr);
     justify-items: center; justify-content: space-between;
     align-items: stretch; gap: 40px;

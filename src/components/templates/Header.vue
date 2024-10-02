@@ -19,13 +19,10 @@
                         <a href="#skills" class="nav-link">Skills</a>
                     </li>
                     <li class="nav-item">
-                        <a href="#projects" class="nav-link">Projects</a>
+                        <a href="#projects" class="nav-link">Portfolio</a>
                     </li>
                     <li class="nav-item">
-                        <a href="#services" class="nav-link">Services</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="#contact" class="nav-link">Contact</a>
+                        <a href="#about" class="nav-link">About</a>
                     </li>
                     <li class="nav-item">
                         <a href="#" class="nav-link">Blog</a>
@@ -73,7 +70,7 @@ header .menu .nav-item:not(:last-child)::after { background-color: var(--black-h
 
 header {
     height: var(--header-h); inset: 0;
-    position: fixed; z-index: 999;
+    position: fixed; z-index: 1;
     border-bottom: 1px solid;
 }
 
