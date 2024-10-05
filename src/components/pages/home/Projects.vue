@@ -22,7 +22,7 @@
             </div>
         </div>
         <div class="projects-modals" v-if="tbsShow || todoShow || devforumShow || roadmapShow">
-            <div class="backdrop" v-if="tbsShow || todoShow || devforumShow" @click.prevent="closeModal"></div>
+            <div class="backdrop" v-if="tbsShow || todoShow || devforumShow || roadmapShow" @click.prevent="closeModal"></div>
             <div class="modal bg-half" :class="{ dark, show: tbsShow }">
                 <div class="title-bar bg-soft" :class="{ dark }">
                     <h2>The Best Seller</h2>
