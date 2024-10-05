@@ -17,8 +17,11 @@
             <div class="card" id="dev-forum">
                 <button @click.prevent="devforumShow = true">Dev Forum</button>
             </div>
+            <div class="card" id="roadmap">
+                <button @click.prevent="roadmapShow = true">Roadmap Projects</button>
+            </div>
         </div>
-        <div class="projects-modals" v-if="tbsShow || todoShow || devforumShow">
+        <div class="projects-modals" v-if="tbsShow || todoShow || devforumShow || roadmapShow">
             <div class="backdrop" v-if="tbsShow || todoShow || devforumShow" @click.prevent="closeModal"></div>
             <div class="modal bg-half" :class="{ dark, show: tbsShow }">
                 <div class="title-bar bg-soft" :class="{ dark }">
@@ -31,12 +34,12 @@
                 <div class="container">
                     <div class="slider-wrapper">
                         <div id="slider-tbs" class="slider">
-                            <img src="@/assets/imgs/projects/tbs-1.png" alt="Home page">
-                            <img src="@/assets/imgs/projects/tbs-2.png" alt="Home page">
-                            <img src="@/assets/imgs/projects/tbs-3.png" alt="Home page">
-                            <img src="@/assets/imgs/projects/tbs-4.png" alt="Home page">
-                            <img src="@/assets/imgs/projects/tbs-5.png" alt="Home page">
-                            <img src="@/assets/imgs/projects/tbs-6.png" alt="Home page">
+                            <img src="@/assets/imgs/projects/tbs-1.png"/>
+                            <img src="@/assets/imgs/projects/tbs-2.png"/>
+                            <img src="@/assets/imgs/projects/tbs-3.png"/>
+                            <img src="@/assets/imgs/projects/tbs-4.png"/>
+                            <img src="@/assets/imgs/projects/tbs-5.png"/>
+                            <img src="@/assets/imgs/projects/tbs-6.png"/>
                         </div>
                         <div class="control">
                             <button class="prev" @click="prevSlide('tbs')">
@@ -103,9 +106,9 @@
                 <div class="container">
                     <div class="slider-wrapper">
                         <div id="slider-todo" class="slider">
-                            <img src="@/assets/imgs/projects/to-do-list-1.png" alt="Home page">
-                            <img src="@/assets/imgs/projects/to-do-list-2.png" alt="Home page">
-                            <img src="@/assets/imgs/projects/to-do-list-3.png" alt="Home page">
+                            <img src="@/assets/imgs/projects/to-do-list-1.png"/>
+                            <img src="@/assets/imgs/projects/to-do-list-2.png"/>
+                            <img src="@/assets/imgs/projects/to-do-list-3.png"/>
                         </div>
                         <div class="control">
                             <button class="prev" @click="prevSlide('todo')">
@@ -170,11 +173,11 @@
                 <div class="container">
                     <div class="slider-wrapper">
                         <div id="slider-devforum" class="slider">
-                            <img src="@/assets/imgs/projects/dev-forum-1.png" alt="Home page">
-                            <img src="@/assets/imgs/projects/dev-forum-2.png" alt="Home page">
-                            <img src="@/assets/imgs/projects/dev-forum-3.png" alt="Home page">
-                            <img src="@/assets/imgs/projects/dev-forum-4.png" alt="Home page">
-                            <img src="@/assets/imgs/projects/dev-forum-5.png" alt="Home page">
+                            <img src="@/assets/imgs/projects/dev-forum-1.png"/>
+                            <img src="@/assets/imgs/projects/dev-forum-2.png"/>
+                            <img src="@/assets/imgs/projects/dev-forum-3.png"/>
+                            <img src="@/assets/imgs/projects/dev-forum-4.png"/>
+                            <img src="@/assets/imgs/projects/dev-forum-5.png"/>
                         </div>
                         <div class="control">
                             <button class="prev" @click="prevSlide('devforum')">
@@ -229,6 +232,70 @@
                     </div>
                 </div>
             </div>
+
+            <div class="modal bg-half" :class="{ dark, show: roadmapShow }">
+                <div class="title-bar bg-soft" :class="{ dark }">
+                    <h2>Roadmap Projects</h2>
+                    <button class="btn-close" @click.prevent="closeModal">
+                        <img v-if="dark" src="@/assets/imgs/icons/close-white.png">
+                        <img v-else src="@/assets/imgs/icons/close-black.png">
+                    </button>
+                </div>
+                <div class="container">
+                    <div class="slider-wrapper">
+                        <div id="slider-roadmap" class="slider">
+                            <img src="@/assets/imgs/projects/roadmap-1.png"/>
+                            <img src="@/assets/imgs/projects/roadmap-2.png"/>
+                            <img src="@/assets/imgs/projects/roadmap-3.png"/>
+                            <img src="@/assets/imgs/projects/roadmap-4.png"/>
+                        </div>
+                        <div class="control">
+                            <button class="prev" @click="prevSlide('roadmap')">
+                                <img src="@/assets/imgs/icons/prev.png" alt="Next">
+                            </button>
+                            <button class="next" @click="nextSlide('roadmap')">
+                                <img src="@/assets/imgs/icons/next.png" alt="Previous">
+                            </button>
+                        </div>
+                    </div>
+                    <div class="description">
+                        <div class="title">
+                            <h2>Roadmap Projects</h2>
+                            <small>Solutions for the projects suggested by the Roadmap.sh</small>
+                        </div>
+                        <div class="details">
+                            <p>
+                                Roadmap.sh is a website that offers a complete study map for 
+                                developers , in addition to proposing projects to improve user's skills.
+                            </p>
+                        </div>
+                        <div class="techniques">
+                            <h5>Finished projects</h5>
+                            <ul>
+                                <li>Changelog Component</li>
+                                <li>Testimonial Cards</li>
+                                <li>Datepicker</li>
+                                <li>Accessible Form UI</li>
+                                <li>Personal Portfolio</li>
+                            </ul>
+                        </div>
+                        <div class="technologies">
+                            <h5>Technologies</h5>
+                            <div class="technologies-container">
+                                <img src="@/assets/imgs/html5.png" alt="HTML5">
+                                <img src="@/assets/imgs/css3.png" alt="CSS3">
+                            </div>
+                        </div>
+                        <div class="github">
+                            <a href="https://github.com/sadiegoc/roadmap-projects" target="blank">
+                                <img v-if="dark" src="@/assets/imgs/icons/social/github-white.png" alt="GitHub">
+                                <img v-else src="@/assets/imgs/icons/social/github-black.png" alt="GitHub">
+                                View on GitHub
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
 </template>
@@ -244,10 +311,12 @@ export default {
             tbsShow: false,
             todoShow: false,
             devforumShow: false,
+            roadmapShow: false,
             sliders: {
                 tbs: { currentSlide: 0, totalSlides: 6 },
                 todo: { currentSlide: 0, totalSlides: 3 },
-                devforum: { currentSlide: 0, totalSlides: 5 }
+                devforum: { currentSlide: 0, totalSlides: 5 },
+                roadmap: { currentSlide: 0, totalSlides: 4 }
             }
         }
     },
@@ -287,6 +356,7 @@ export default {
             this.tbsShow = false
             this.todoShow = false
             this.devforumShow = false
+            this.roadmapShow = false
         }
     }
 }
@@ -384,6 +454,10 @@ section > h2 {
 
 #dev-forum {
     background-image: url(../../../assets/imgs/projects/dev-forum-1.png);
+}
+
+#roadmap {
+    background-image: url(../../../assets/imgs/projects/roadmap-1.png);
 }
 
 .card button {
