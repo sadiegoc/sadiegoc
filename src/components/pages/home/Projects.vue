@@ -277,6 +277,10 @@
                                 <li>Datepicker</li>
                                 <li>Accessible Form UI</li>
                                 <li>Personal Portfolio</li>
+                                <li>Image Grid Layout</li>
+                                <li>Tooltip UI</li>
+                                <li>Tabs</li>
+                                <li>Cookie Consent</li>
                             </ul>
                         </div>
                         <div class="technologies">
