@@ -248,6 +248,13 @@
                             <img src="@/assets/imgs/projects/roadmap-2.png"/>
                             <img src="@/assets/imgs/projects/roadmap-3.png"/>
                             <img src="@/assets/imgs/projects/roadmap-4.png"/>
+                            <img src="@/assets/imgs/projects/roadmap-5.png"/>
+                            <img src="@/assets/imgs/projects/roadmap-6.png"/>
+                            <img src="@/assets/imgs/projects/roadmap-7.png"/>
+                            <img src="@/assets/imgs/projects/roadmap-8.png"/>
+                            <img src="@/assets/imgs/projects/roadmap-11.png"/>
+                            <img src="@/assets/imgs/projects/roadmap-9.png"/>
+                            <img src="@/assets/imgs/projects/roadmap-10.png"/>
                         </div>
                         <div class="control">
                             <button class="prev" @click="prevSlide('roadmap')">
@@ -273,14 +280,17 @@
                             <h5>Finished projects</h5>
                             <ul>
                                 <li>Changelog Component</li>
+                                <li>Personal Portfolio</li>
                                 <li>Testimonial Cards</li>
                                 <li>Datepicker</li>
                                 <li>Accessible Form UI</li>
-                                <li>Personal Portfolio</li>
                                 <li>Image Grid Layout</li>
                                 <li>Tooltip UI</li>
                                 <li>Tabs</li>
                                 <li>Cookie Consent</li>
+                                <li>Restricted Text Area</li>
+                                <li>Accordion</li>
+                                <li>Custom Dropdown</li>
                             </ul>
                         </div>
                         <div class="technologies">
@@ -320,7 +330,7 @@ export default {
                 tbs: { currentSlide: 0, totalSlides: 6 },
                 todo: { currentSlide: 0, totalSlides: 3 },
                 devforum: { currentSlide: 0, totalSlides: 5 },
-                roadmap: { currentSlide: 0, totalSlides: 4 }
+                roadmap: { currentSlide: 0, totalSlides: 11 }
             }
         }
     },
